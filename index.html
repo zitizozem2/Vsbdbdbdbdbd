@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <form id="form-contact" method="POST" class="contact-form" autocomplete="off" enctype="multipart/form-data" action="sender.php">
+  <p class="contact-form__title">Request a callback and our consultant will contact you</p>
+  <div class="preloader"></div>
+  <p class="contact-form__message"></p>
+  <div class="contact-form__input-wrapper contact-form__input-wrapper_name">
+    <input name="name" type="""text" class="contact-form__input contact-form__input_name" placeholder="Name">
+  </div>
+  <div class="contact-form__input-wrapper contact-form__input-wrapper_phone">
+    <input name="phone" type="tel" class="contact-form__input contact-form__input_phone" placeholder="Phone number">
+  </div>
+  <div class="contact-form__input-wrapper">
+    <input type="file" name="files[]" id="contact-form__input_file" class="contact-form__input contact-form__input_file" multiple>
+    <label for="contact-form__input_file" class="contact-form__file-button">
+      <span class="contact-form__file-text">Choice file</span>
+    </label>
+  </div>
+  <input name="theme" type="hidden" class="contact-form__input contact-form__input_theme" value="Application from the site *Sitename*">
+  <button type="submit" class="contact-form__button">Send</button>
+</form>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="telegram.js"></script>
+</body>
+</html>
